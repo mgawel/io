@@ -1,0 +1,18 @@
+a) zasady dzia³ania ga³êzi w systemie git
+Git przechowuje migawki, a nie ró¿nice, jak wiele innych systemów kontroli wersji. Przy wielu kcommitach, dla ka¿dego przechowywane s¹ inne migawki (odpowiadaj¹ce danemu commitowi). Ga³¹Ÿ sie wskaŸnikiem na commit. Domyœlna ga³¹Ÿ rozwoju nosi nazwê master.Gdy utworzymy now¹ ga³¹Ÿ bêdzie ona pocz¹tkowo wskazywa³a na ten sam commit co ga³¹Ÿ master. Aby sprawdziæ na której ga³êzi aktualnie siê siedzi u¿ywa siê specjany wskaŸnik HEAD. Polecenie git branch jedynie tworzy ga³¹Ÿ, ale na ni¹ nie przeskakuje - do tego s³u¿y polecenie: git checkout nawza_ga³êzi. Jeœli w nowej ga³êxi zrobimy commit - to przeskoczy ona na ten nowy commit, a ga³¹Ÿ master dalej bêdzie wskazywa³a poprzedni commit. A gdyby HEAD przeskoczy³ do ga³êzi master to utworzy³ bo na niej nowy commit. Dziêki temu mo¿na tworzyæ ca³kiem rozbudowane struktury rozwoju. 
+
+b) nazywa domyœlnej ga³êzi rozwoju w systemie git
+MASTER
+
+c) wskaŸnika HEAD
+S³u¿y do sprawdzania na jakiej ga³êzi aktualnie siê siedzi.
+
+d) wypisz polecenia git zwi¹zane z ga³êziami i prac¹ na nich
+git branch nazwa_ga³êzi   - tworzenie nowej ga³êzi o dowolnej nazwie
+HEAD - wskazywanie na jakiej ga³êzi siê siedzi
+git checkout nazwa_ga³êzi   - s³u¿y do przeskakiwania na inne ga³êzie.
+git merge nazwa_ga³êzi   - s³uy¿y do scalania swojej ga³êzi z ga³êzi¹ g³ówn¹
+git branch - wyœwietla listê ga³êzi
+git branch -v   - wyœwietla listê ga³êzi wraz z commitami
+git branch --merged  - wyœwietla listê scalonych ga³êzi (dostêpny te¿ jest prze³¹cznik --no-merged
+git branch -d nazwa_ga³êzi - usuwanie ga³êzi
