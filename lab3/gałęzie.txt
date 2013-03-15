@@ -1,5 +1,13 @@
 a) zasady dzia³ania ga³êzi w systemie git
-Git przechowuje migawki, a nie ró¿nice, jak wiele innych systemów kontroli wersji. Przy wielu kcommitach, dla ka¿dego przechowywane s¹ inne migawki (odpowiadaj¹ce danemu commitowi). Ga³¹Ÿ sie wskaŸnikiem na commit. Domyœlna ga³¹Ÿ rozwoju nosi nazwê master.Gdy utworzymy now¹ ga³¹Ÿ bêdzie ona pocz¹tkowo wskazywa³a na ten sam commit co ga³¹Ÿ master. Aby sprawdziæ na której ga³êzi aktualnie siê siedzi u¿ywa siê specjany wskaŸnik HEAD. Polecenie git branch jedynie tworzy ga³¹Ÿ, ale na ni¹ nie przeskakuje - do tego s³u¿y polecenie: git checkout nawza_ga³êzi. Jeœli w nowej ga³êxi zrobimy commit - to przeskoczy ona na ten nowy commit, a ga³¹Ÿ master dalej bêdzie wskazywa³a poprzedni commit. A gdyby HEAD przeskoczy³ do ga³êzi master to utworzy³ bo na niej nowy commit. Dziêki temu mo¿na tworzyæ ca³kiem rozbudowane struktury rozwoju. 
+Git przechowuje migawki, a nie ró¿nice, jak wiele innych systemów kontroli wersji.
+ Przy wielu kcommitach, dla ka¿dego przechowywane s¹ inne migawki (odpowiadaj¹ce danemu commitowi).
+  Ga³¹Ÿ sie wskaŸnikiem na commit. Domyœlna ga³¹Ÿ rozwoju nosi nazwê master.Gdy utworzymy now¹ ga³¹Ÿ
+   bêdzie ona pocz¹tkowo wskazywa³a na ten sam commit co ga³¹Ÿ master. Aby sprawdziæ na której ga³êzi
+    aktualnie siê siedzi u¿ywa siê specjany wskaŸnik HEAD. Polecenie git branch jedynie tworzy ga³¹Ÿ, 
+    ale na ni¹ nie przeskakuje - do tego s³u¿y polecenie: git checkout nawza_ga³êzi. Jeœli w nowej ga³êxi
+     zrobimy commit - to przeskoczy ona na ten nowy commit, a ga³¹Ÿ master dalej bêdzie wskazywa³a poprzedni 
+     commit. A gdyby HEAD przeskoczy³ do ga³êzi master to utworzy³ bo na niej nowy commit. Dziêki temu mo¿na
+      tworzyæ ca³kiem rozbudowane struktury rozwoju. 
 
 b) nazywa domyœlnej ga³êzi rozwoju w systemie git
 MASTER
