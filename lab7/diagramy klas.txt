@@ -1,0 +1,15 @@
+Diagram klas = w ujednoliconym jêzyku modelowania, to stastyczny diagram strukturalnym przedstaswiaj¹cy strukturê systemu w modelach obiektowych przez ilustracjê strukltury klas i zale¿noœci miêdzy nimi.
+Diagram klas przedstawia klasy (typy) obiektów w programie. w odró¿nieniu do diagramu obiektów, który pokazuje jedynie egzemplarze (instancje) obiektów i ich zale¿noœci istniej¹ce w konkretnym momencie.
+Diagram klas pokazuje okreœlony fragment struktury systemu. Diagramów klas u¿ywa siê do modelowania statycznych aspektów perspektywy projektowej. Wi¹¿e siê z tym silnie modelowanie s³ownictwa systemu, kooperacji lub schematów. Diagramy klas pozwalaj¹ na sformalizowanie specyfikacji danych i metod. Mog¹ tak¿e pe³niæ rolê graficznego œrodka pokazuj¹cego szczegó³y implementacji klas.
+
+Asocjacja
+Asocjacja wskazuje na trwa³e powi¹zanie pomiêdzy obiektami danych klas. Na diagramie asocjacjê oznacza siê za pomoc¹ linii zakoñczonej strza³k¹ (skierowan¹ od klasy Ÿród³owej do docelowej). Nazwê cechy wraz z krotnoœci¹ umieszcza siê w punkcie docelowym asocjacji. Np. firma zatrudnia pracowników, lekarz leczy pacjentów, in¿ynierzy tworz¹ nowe technologie
+
+Agregacja
+Agregacja reprezentuje zwi¹zek typu ca³oœæ-czêœæ. Wystêpuje tutaj relacja posiadania — co oznacza, ¿e elementy czêœciowe mog¹ nale¿eæ do wiêkszej ca³oœci, jednak równie¿ mog¹ istnieæ bez niej. Na diagramie agregacjê oznacza siê za pomoc¹ linii zakoñczonej pustym rombem. Np. Samochód zawiera silnik, u¿ytkownik posiada telefon, plan zajêæ zawiera przerwy.
+
+Kompozycja
+Kompozycja, zwana równie¿ z³o¿eniem, jest zwi¹zkiem typu ca³oœæ-czêœæ. W relacji kompozycji, czêœci nale¿¹ tylko do jednej ca³oœci, a ich okres ¿ycia jest wspólny — razem z ca³oœci¹ niszczone s¹ równie¿ czêœci. Na diagramie, kompozycjê oznacza siê za pomoc¹ linii zakoñczonej wype³nionym rombem. Np. P³uca nale¿¹ do uk³adu oddechowego, zwierzêta i roœliny wchodz¹ w sk³ad fauny i flory, limfocyty, erytrocyty i trompocyty i limfa tworz¹ krew. 
+
+Generalizacja
+Generalizacja – zwi¹zek opisuj¹cy dziedziczenie po klasach. Na diagramie generalizacjê oznacza siê za pomoc¹ niewype³nionego trójk¹ta symbolizuj¹cego strza³kê (skierowan¹ od klasy pochodnej do klasy bazowej). Np. ko³o jest figur¹, ci¹g znaków alfabetycznych jest wyrazem, ci¹g nut jest melodi¹. 
