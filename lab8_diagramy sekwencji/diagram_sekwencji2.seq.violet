@@ -533,5 +533,10 @@
    <object idref="ActivationBarNode9"/>
    <object idref="ActivationBarNode8"/>
   </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ReturnEdge"/>
+   <object idref="ActivationBarNode1"/>
+   <object idref="ActivationBarNode0"/>
+  </void>
  </object>
 </java>
