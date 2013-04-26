@@ -1,0 +1,34 @@
+1.) D i a g r a m y  s e k w e n c j i  - opisuj¹ interakcje pomiêdzy czêœciami systemu w postaci sekwencji komunikatów wymienianych miêdzy nimi. Obrazuje kolejnoœæ w czasie wysy³ania komunikatów pomiêdzy ró¿nymi obiektami w systemie
+Standardowy format:
+Nazwa [ selektor]:nazwa klasy ref dekompozycja
+To jakie elementy z danego formatu zostan¹ wybrane dla okreœlonego uczestnika, zale¿eæ bêdzie od tego, jaki rodzaj informacji o nim mmay w danym momencie.
+Diagramy sekwencji (ang. sequence diagrams) intuicyjnie prezentuj¹ kolejnoœæ wywo³añ operacji, przep³yw sterowania pomiêdzy obiektami oraz szablon realizowanego algorytmu. Pomijaj¹ natomiast ca³kowicie aspekt dostêpu i operacji na danych, zwi¹zany z komunikacj¹.
+  - Uczestnikami diagramów sekwencji s¹ obiekty, opisane nazw¹ obiektu i jego klas¹, które wymieniaj¹ miêdzy sob¹ komunikaty.
+  - Diagram sekwencji jest zapisany w prostok¹cie oznaczonym operatorem sd (od angielskiej nazwy diagramu) i sk³ada siê z pionowych linii ¿ycia (ang. lifelines) poszczególnych obiektów uczestnicz¹cych w interakcji oraz wymienianych miêdzy nimi komunikatów (wywo³añ operacji). Bia³e prostok¹ty umieszczone na linii ¿ycia obiektu oznaczaj¹, ¿e obiekt jest zajêty wykonywaniem pewnej czynnoœci (natomiast nie maj¹ bezpoœredniego zwi¹zku z istnieniem obiektu).
+  - Czas jest reprezentowany w postaci pionowej osi diagramu. Linia ¿ycia obiektu to czas, w którym konkretna instancja obiektu jest w stanie przyjmowaæ komunikaty i wysy³aæ je. Innymi s³owy, obejmuje ona czas istnienia obiektu w systemie.
+  - Obiekt jest tworzony poprzez wys³anie do niego komunikatu-konstruktora (Bibliotekarz tworzy obiekt klasy Karta Wydawnictwa), natomiast niekoniecznie jest fizycznie usuwany na koñcu linii ¿ycia ? raczej przestaje byæ istotny. Fizycznie usuniêcie obiektu mo¿na wprost oznaczyæ jako znak X na linii ¿ycia (na przyk³ad obiekt Karta wydawnictwa).
+
+K o m u n i k a t   to forma kontaktu pomiêdzy obiektami, której efektem ma byæ podjêcie przez docelowy obiekt pewnej akcji. Otrzymanie komunikatu przez obiekt wi¹¿e siê z wykonaniem przez niego jego w³asnego kodu lub wys³aniem kolejnego komunikatu do innego obiektu w celu wykonania przez niego pewnej akcji.
+Komunikaty w UML s¹ reprezentowane przez strza³ki ³¹cz¹ce linie ¿ycia poszczególnych obiektów. Ka¿dy komunikat wewn¹trz interakcji opatrzony jest kolejnym numerem, co pozwala na ³atwe œledzenie jej przebiegu. Istniej¹ trzy podstawowe komunikaty, jakie mog¹ zostaæ wymienione pomiêdzy obiektami: wywo³anie procedury, powrót z niej oraz wywo³anie asynchroniczne.
+
+
+B l o k   definiuje grupê komunikatów wspólnie posiadaj¹c¹ pewn¹ w³aœciwoœæ.
+Bardzo czêsto zachodzi koniecznoœæ wskazania specjalnej w³asnoœci pewnej czêœci interakcji, np. oznaczenie sekcji krytycznej czy zwyczajnej pêtli. Na diagramach sekwencji tak¹ grupê operacji obejmuje siê prostok¹tem, w którego lewym górnym naro¿niku, w piêciok¹cie umieszcza siê s³owo kluczowe lub opis okreœlaj¹cy znaczenie danego bloku (tzw. operator interakcji)
+
+O P E R A T O R Y    I N T E R A K C J I 
+  - alt (od alternative ) - okreœlaj¹cy warunek wykonania bloku operacji, odpowiadaj¹cy instrukcji if-else ; warunek umieszcza siê wówczas wewn¹trz bloku w nawiasach kwadratowych
+  - opt (od optional ) - reprezentuj¹cy instrukcjê if (bez else )
+  - par (od parallel ) - nakazuj¹cy wykonaæ operacje równolegle
+  - critical - blok atomowy, oznaczaj¹cy obszar krytyczny
+  - loop - definiuj¹cy pêtlê typu for (o okreœlonej z góry liczbie iteracji) lub while (wykonywanej dopóki pewien warunek jest prawdziwy)
+  - break - wykonanie fragmentu i zakoñczenie interakcji
+  - seq - s³aba sekwencja (podobnie do wspó³bie¿noœci) dotyczy zdarzeñ z kilku linii
+  - ignore/consider - ignore(komunikat1, komunikat2, ...) oznacza, ¿e na diagramie nie pokazano wymienionych komunikatów, choæ mog¹ wyst¹piæ. Consider = odwrotnie
+  
+  T E C H N I K I   T W O R Z E N I A  D I A G R A M U   S E K W E N C J I
+Ustalenie otoczenia (operacja, scenariusz PU itp.)
+Zidentyfikowanie obiektów bior¹cych udzia³ w operacji (po lewej umieszczane obiekty najwa¿niejsze)
+Narysowanie linii ¿ycia obiektów (jeœli s¹ tworzone i niszczone - dodanie odpowiednich komunikatów)
+Dodanie komunikatu inicjuj¹cego, kolejne komunikaty pod nim (dodanie parametrów do komunikatów, tam gdzie potrzeba)
+Dodanie aktywacji (oœrodka sterowania)
+Dodawanie ograniczeñ
