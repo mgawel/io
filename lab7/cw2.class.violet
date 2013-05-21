@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.7.0_13" class="java.beans.XMLDecoder">
+<java version="1.7.0_21" class="java.beans.XMLDecoder">
  <object class="com.horstmann.violet.ClassDiagramGraph">
   <void method="addNode">
    <object class="com.horstmann.violet.ClassNode" id="ClassNode0">
@@ -63,7 +63,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode2">
     <void property="name">
      <void property="text">
-      <string>ksi��ka</string>
+      <string>książka</string>
      </void>
     </void>
    </object>
@@ -150,7 +150,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode5">
     <void property="name">
      <void property="text">
-      <string>kierownik studi�w</string>
+      <string>kierownik studiów</string>
      </void>
     </void>
    </object>
@@ -179,7 +179,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode6">
     <void property="name">
      <void property="text">
-      <string>u�ytkownik</string>
+      <string>użytkownik</string>
      </void>
     </void>
    </object>
@@ -324,7 +324,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode11">
     <void property="name">
      <void property="text">
-      <string>ksi��ka</string>
+      <string>książka</string>
      </void>
     </void>
    </object>
@@ -383,7 +383,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode13">
     <void property="name">
      <void property="text">
-      <string>zam�wienie</string>
+      <string>zamówienie</string>
      </void>
     </void>
    </object>
@@ -470,7 +470,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode16">
     <void property="name">
      <void property="text">
-      <string>marsza�ek</string>
+      <string>marszałek</string>
      </void>
     </void>
    </object>
@@ -557,7 +557,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode19">
     <void property="name">
      <void property="text">
-      <string>po��czenie</string>
+      <string>połączenie</string>
      </void>
     </void>
    </object>
@@ -586,7 +586,7 @@
    <object class="com.horstmann.violet.NoteNode">
     <void property="text">
      <void property="text">
-      <string>Oznacz liczno�� dla nat�puj�cych asocjacji</string>
+      <string>Oznacz liczność dla natępujących asocjacji</string>
      </void>
     </void>
    </object>
@@ -617,7 +617,7 @@
      <object class="com.horstmann.violet.BentStyle" field="HVH"/>
     </void>
     <void property="endLabel">
-     <string>1</string>
+     <string>1...N</string>
     </void>
     <void property="startLabel">
      <string>1</string>
@@ -662,10 +662,10 @@
      <object class="com.horstmann.violet.BentStyle" field="HVH"/>
     </void>
     <void property="endLabel">
-     <string>N</string>
+     <string>1</string>
     </void>
     <void property="startLabel">
-     <string>N</string>
+     <string>1...N</string>
     </void>
    </object>
    <object idref="ClassNode12"/>
@@ -692,10 +692,10 @@
      <object class="com.horstmann.violet.BentStyle" field="HVH"/>
     </void>
     <void property="endLabel">
-     <string>1</string>
+     <string>N</string>
     </void>
     <void property="startLabel">
-     <string>N</string>
+     <string>1</string>
     </void>
    </object>
    <object idref="ClassNode2"/>

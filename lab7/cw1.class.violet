@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.7.0_13" class="java.beans.XMLDecoder">
+<java version="1.7.0_21" class="java.beans.XMLDecoder">
  <object class="com.horstmann.violet.ClassDiagramGraph">
   <void method="addNode">
    <object class="com.horstmann.violet.ClassNode" id="ClassNode0">
@@ -63,7 +63,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode2">
     <void property="name">
      <void property="text">
-      <string>u�ytkownik</string>
+      <string>użytkownik</string>
      </void>
     </void>
    </object>
@@ -92,7 +92,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode3">
     <void property="name">
      <void property="text">
-      <string>wiadomo��</string>
+      <string>wiadomość</string>
      </void>
     </void>
    </object>
@@ -121,7 +121,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode4">
     <void property="name">
      <void property="text">
-      <string>ucze�</string>
+      <string>uczeń</string>
      </void>
     </void>
    </object>
@@ -150,7 +150,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode5">
     <void property="name">
      <void property="text">
-      <string>szko�a</string>
+      <string>szkoła</string>
      </void>
     </void>
    </object>
@@ -208,7 +208,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode7">
     <void property="name">
      <void property="text">
-      <string>licza ca�kowita</string>
+      <string>licza całkowita</string>
      </void>
     </void>
    </object>
@@ -237,7 +237,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode8">
     <void property="name">
      <void property="text">
-      <string>d�b</string>
+      <string>dąb</string>
      </void>
     </void>
    </object>
@@ -383,7 +383,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode13">
     <void property="name">
      <void property="text">
-      <string>prostok�t
+      <string>prostokąt
 </string>
      </void>
     </void>
@@ -529,7 +529,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode18">
     <void property="name">
      <void property="text">
-      <string>ksi��ka</string>
+      <string>książka</string>
      </void>
     </void>
    </object>
@@ -587,7 +587,7 @@
    <object class="com.horstmann.violet.NoteNode">
     <void property="text">
      <void property="text">
-      <string>Dorysuj linie przedstawiaj�ce zwi�zki ��cz�ce klasy: asocjacje, agregacje, kompozycje lub dziedziczenie</string>
+      <string>Dorysuj linie przedstawiające związki łączące klasy: asocjacje, agregacje, kompozycje lub dziedziczenie</string>
      </void>
     </void>
    </object>
@@ -617,14 +617,8 @@
     <void property="bentStyle">
      <object class="com.horstmann.violet.BentStyle" field="HVH"/>
     </void>
-    <void property="endLabel">
-     <string>N</string>
-    </void>
     <void property="startArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="BLACK_DIAMOND"/>
-    </void>
-    <void property="startLabel">
-     <string>1</string>
+     <object class="com.horstmann.violet.ArrowHead" field="DIAMOND"/>
     </void>
    </object>
    <object idref="ClassNode0"/>
@@ -635,104 +629,20 @@
     <void property="bentStyle">
      <object class="com.horstmann.violet.BentStyle" field="HVH"/>
     </void>
-    <void property="endLabel">
-     <string>N</string>
-    </void>
-    <void property="startArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="BLACK_DIAMOND"/>
-    </void>
-    <void property="startLabel">
-     <string>1</string>
-    </void>
-   </object>
-   <object idref="ClassNode16"/>
-   <object idref="ClassNode17"/>
-  </void>
-  <void method="connect">
-   <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
-    <void property="endLabel">
-     <string>1</string>
-    </void>
-    <void property="startArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="DIAMOND"/>
-    </void>
-    <void property="startLabel">
-     <string>N</string>
-    </void>
-   </object>
-   <object idref="ClassNode5"/>
-   <object idref="ClassNode4"/>
-  </void>
-  <void method="connect">
-   <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
-    <void property="endLabel">
-     <string>1</string>
-    </void>
-    <void property="startArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="DIAMOND"/>
-    </void>
-    <void property="startLabel">
-     <string>1</string>
-    </void>
-   </object>
-   <object idref="ClassNode6"/>
-   <object idref="ClassNode7"/>
-  </void>
-  <void method="connect">
-   <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
-    <void property="endLabel">
-     <string>N</string>
-    </void>
-    <void property="startArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="DIAMOND"/>
-    </void>
-    <void property="startLabel">
-     <string>1</string>
-    </void>
-   </object>
-   <object idref="ClassNode10"/>
-   <object idref="ClassNode11"/>
-  </void>
-  <void method="connect">
-   <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
-    <void property="endLabel">
-     <string>1</string>
-    </void>
-    <void property="startArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="DIAMOND"/>
-    </void>
-    <void property="startLabel">
-     <string>N</string>
-    </void>
-   </object>
-   <object idref="ClassNode18"/>
-   <object idref="ClassNode19"/>
-  </void>
-  <void method="connect">
-   <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
-    <void property="endLabel">
-     <string>1</string>
+   </object>
+   <object idref="ClassNode4"/>
+   <object idref="ClassNode5"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
     </void>
-    <void property="startLabel">
-     <string>1</string>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
    </object>
    <object idref="ClassNode8"/>
@@ -741,16 +651,10 @@
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
     <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
+     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
     </void>
     <void property="endArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="V"/>
-    </void>
-    <void property="endLabel">
-     <string>1</string>
-    </void>
-    <void property="startLabel">
-     <string>1</string>
+     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
    </object>
    <object idref="ClassNode12"/>
@@ -761,18 +665,36 @@
     <void property="bentStyle">
      <object class="com.horstmann.violet.BentStyle" field="HVH"/>
     </void>
-    <void property="endArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    <void property="startArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="BLACK_DIAMOND"/>
     </void>
-    <void property="endLabel">
-     <string>N</string>
+   </object>
+   <object idref="ClassNode16"/>
+   <object idref="ClassNode17"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
     </void>
-    <void property="startLabel">
-     <string>1</string>
+    <void property="startArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="BLACK_DIAMOND"/>
     </void>
    </object>
    <object idref="ClassNode2"/>
    <object idref="ClassNode3"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
+    </void>
+   </object>
+   <object idref="ClassNode7"/>
+   <object idref="ClassNode6"/>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
@@ -782,15 +704,33 @@
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
-    <void property="endLabel">
-     <string>1</string>
+   </object>
+   <object idref="ClassNode11"/>
+   <object idref="ClassNode10"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
     </void>
-    <void property="startLabel">
-     <string>1</string>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
    </object>
-   <object idref="ClassNode14"/>
    <object idref="ClassNode15"/>
+   <object idref="ClassNode14"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
+    </void>
+    <void property="startArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="DIAMOND"/>
+    </void>
+   </object>
+   <object idref="ClassNode19"/>
+   <object idref="ClassNode18"/>
   </void>
  </object>
 </java>
